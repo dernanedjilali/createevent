@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Gilda+Display&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gilda Display', serif;
+    
+}
+body{
+    height: 2000px;
+}
+.main{
+   
+    height: 100vh;
+}
+.main-parent{
+   
+   height: 100vh;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.header{
+    display: flex;
+    width: 100%;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+   transition: all 0.8s;
+   position: fixed;
+   z-index: 10000;
+   padding: 8px 10px;
+}
+.header.scrolled{
+    background-color: #006699;
+}
+.header.scrolled .navbar ul li a{
+    color: white;
+}
+.logo img{
+    width: 160px;
+    height: 60px;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+.navbar ul{
+    display: flex;
+    list-style-type: none;
+   
+}
+.navbar ul li a{
+    color: #006699;
+    text-decoration: none;
+    margin: 13px;
+    font-size: 18px;
+    transition: all 0.4s;
+    font-weight: 500;
+}
+.navbar ul li a:hover{
+    font-weight: bolder;
+}
+.btns{
+    margin-left: 30px;
+}
+.btns button{
+    height: 40px;
+    padding: 10px;
+    font-size: 15px;
+    margin: 6px;
+    border: white solid 1.6px;
+    border-radius: 4px;
+}
+.btns button:last-child{
+    background-color: transparent;
+    color: white;
+}
+.fond{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: white;
+    font-size: 30px;
+}
+.fond img{
+    width: 80%;
+    height: 80%;
+}
+
+
+/*********************** REFERENCES ***************************/
+.reference{
+    padding: 20px 0px;
+}
+.reference h1, .valeur h1{
+    width: 80%;
+    margin: auto;
+    color: #006699;
+    margin-bottom: 20px;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 200px;
+    height:200px;
+    object-fit: contain;
+    padding: 40px 30px;
+  }
+  .parentvalues{
+    background: linear-gradient( #0b8dce 20%, #0F4D80);
+    display: flex;
+    justify-content: space-around;
+    height: 450px;
+    align-items: center;
+  }
+ .parentvalues .item{
+    color: white;
+    position: relative;
+    width: 250px;
+    background-color: #0F4D80;
+    height: 330px;
+    border-radius: 11px;
+  }
+.parentvalues .item img {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    right: 33%;
+    left: 33%;
+    top: -30px;
+    
+}
+.parentvalues .item h3{
+    margin-top: 60px;
+    text-align: center;
+}
+.parentvalues .item p{
+    padding: 20px;
+}
+
+
+/*************** FOOTER ****************/
+.footer {
+    color: white;
+    display: flex;
+    flex-direction: column;
+
+}
+.footer .contact{
+    background-color: #006699;
+    padding: 25px 10px;
+    display: flex;
+    flex-direction: column;
+}
+.footer .contact .contactchild{
+    
+    display: flex;
+    justify-content: space-around;
+   align-items: center;
+   padding:  15x;
+}
+.footer .contact .contactchild div{
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    border-left:  white solid 3px;
+}
+.footer .contact .contactchild div p,.footer .contact .contactchild div a{
+   transition: 0.5s;
+   cursor: pointer;
+   color: white;
+   text-decoration: none;
+}
+.footer .contact .contactchild div p:hover , .footer .contact .contactchild div a:hover{
+    margin-left: 8px;
+    font-size: 18px;
+}
+.footer .contact .contactchild div p i ,.footer .contact .contactchild div a i{
+    padding:  0px 10px ;
+}
+.footer h1{
+    background-color: #006699;
+    color: white;
+    text-align: center;
+}
+.copyright{
+    color: #006699;
+    text-align: center;
+}
